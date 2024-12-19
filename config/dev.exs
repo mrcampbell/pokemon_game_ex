@@ -12,7 +12,7 @@ config :game, Game.Repo,
 
 config :game, Game.Utils.PokeAPIClient,
   base_url: "https://pokeapi.co/api/v2",
-  file_path: "data/pokemon/"
+  file_path: "data/"
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
