@@ -10,6 +10,10 @@ config :game, Game.Repo,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
+config :game, Game.Utils.PokeAPIClient,
+  base_url: "https://pokeapi.co/api/v2",
+  file_path: "data/pokemon/"
+
 # For development, we disable any cache and enable
 # debugging and code reloading.
 #
